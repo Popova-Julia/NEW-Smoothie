@@ -1,7 +1,36 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
-@font-face {
+/* @font-face {
     font-family: MuliRegular; 
     src: url(./assets/fonts/Muli-Regular.woff); 
+} */
+@font-face {
+    src: url("./assets/fonts/Muli-Bold.woff");
+    font-family: MuliBold;
+}
+
+@font-face {
+    src: url("./assets/fonts/Muli-ExtraBold.woff");
+    font-family: MuliExtraBold;
+}
+
+@font-face {
+    src: url("./assets/fonts/Muli-ExtraBoldItalic.woff");
+    font-family: MuliExtraBoldItalic;
+}
+
+@font-face {
+    src: url("./assets/fonts/Muli-Regular.woff");
+    font-family: MuliRegular;
+}
+
+@font-face {
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+    font-family: PoppinsMedium;
+}
+
+@font-face {
+    src: url("./assets/fonts/Poppins-SemiBold.ttf");
+    font-family: PoppinsSemiBold;
 }
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
@@ -27,6 +56,93 @@ a {
     height: 100vh;
 }
 
+/* header top */
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 100px 120px 100px;
+    border: 2px solid red;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+.menu {border: 2px solid red;}
+
+.menu__list {
+    list-style: none;
+    font-family: MuliBold;
+    font-size: 16px;
+    display: flex;
+}
+.menu__link {
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+.header__logo {border: 2px solid red;}
+    
+/* header personal */
+.personal__list {
+    list-style: none;
+    display: flex;
+    border: 2px solid red;
+}
+.personal__list-item:not(:last-child) {
+    padding-right: 47px;
+}
+.personal__cart-count {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 18px;
+    height: 18px;
+    /* position:right; */
+    /* display: flex; */
+}
+/* header social */
+.social__list {
+    list-style: none;
+    display: flex;
+    border: 2px solid red;
+    margin-left: 130px;
+}
+.social__list-item {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social__list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* header content */
+.header__content {
+    display: flex;
+    justify-content:center;
+    border: 2px solid red;
+}
+
+.btn {
+    border-radius: 35px;
+    border: none;
+    font-family: MuliExtraBold;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.header__btn{
+    width: 280px;
+    height: 70px;
+    padding: 0 40px 0 40px;
+    font-size: 24px;
+}
+.btn--green-bg {
+    background-color: #0aa566;
+}
 /* Smoothies */
 
 
