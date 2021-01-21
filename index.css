@@ -141,7 +141,7 @@ a {
 }
 
 .btn {
-    border-radius: 35px;
+    border-radius: 30px;
     border: none;
     font-family: MuliExtraBold;
     color: #ffffff;
@@ -153,6 +153,7 @@ a {
     width: 280px;
     height: 70px;
     padding: 0 40px 0 40px;
+    border-radius: 35px;
     font-size: 24px;
 }
 
@@ -163,16 +164,20 @@ a {
 /* Smoothies */
 .smoothies {
     padding:100px 0 110px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 .title {
     font-family: MuliExtraBold;
     font-size: 50px;
     color: #f7ae3b;
-    margin-bottom: 55px;
     border: 2px solid red;
 }
 
-.smoothies__title {}
+.smoothies__title {
+    margin-bottom: 55px;
+}
 
 .text {
     font-family: MuliRegular;
@@ -183,6 +188,7 @@ a {
 
 .smoothies__text {
     width: 920px;
+    text-align: center;
 }
 
 .smoothies__text-bold {
@@ -194,6 +200,7 @@ a {
 /* About */
 .about {
     background-color: #14826f;
+    display: flex;
 }
 
 .about__title {
@@ -210,21 +217,27 @@ a {
     color: #cae941;
     border: 2px solid red;
 }
-
+.about__list {
+    list-style: none;
+}
 .about__list-item {
     color: #ffffff;
 }
 
-.about__btn-orange-border {
+.about__btn--orange-border {
     width: 380px;
     height: 60px;
     padding-left: 30px;
-    border-radius: 30px;
     border: solid 2px #f8b231;
     background: transparent;
     font-size: 21px;
 }
 /* Products */
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
 .products__title {
     font-family: MuliBold;
     font-size: 24px;
@@ -239,25 +252,40 @@ a {
 
 .products__chocolate {
     background-color: #632b17;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 25%;
 }
 
 .products__vegan {
     background-color: #178670;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 25%;
 }
 
 .products__lemon {
     background-color: #f7ae3b;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 25%;
 }
 
 .products__turmeric {
     background-color: #c3471b;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 25%;
 }
 
-.products__btn-white-border {
+.products__btn--white-border {
     width: 200px;
     height: 60px;
     padding-left: 40px;
-    border-radius: 30px;
     border: solid 2px #ffffff;
     background: transparent;
     font-size: 21px;
