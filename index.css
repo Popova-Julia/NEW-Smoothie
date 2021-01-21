@@ -32,6 +32,7 @@
     src: url("./assets/fonts/Poppins-SemiBold.ttf");
     font-family: PoppinsSemiBold;
 }
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
@@ -60,14 +61,19 @@ a {
 .header__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 70px 100px 120px 100px;
     border: 2px solid red;
 }
+
 .header__menu {
     display: flex;
     align-items: center;
 }
-.menu {border: 2px solid red;}
+
+.menu {
+    border: 2px solid red;
+}
 
 .menu__list {
     list-style: none;
@@ -75,30 +81,36 @@ a {
     font-size: 16px;
     display: flex;
 }
+
 .menu__link {
     color: #ffffff;
     padding-right: 20px;
 }
 
-.header__logo {border: 2px solid red;}
-    
+.header__logo {
+    border: 2px solid red;
+}
+
 /* header personal */
 .personal__list {
     list-style: none;
     display: flex;
     border: 2px solid red;
 }
+
 .personal__list-item:not(:last-child) {
     padding-right: 47px;
 }
+
 .personal__cart-count {
     border-radius: 50%;
     background-color: #ffffff;
     width: 18px;
     height: 18px;
-    /* position:right; */
-    /* display: flex; */
+    display: inline-block;
+    text-align: center;
 }
+
 /* header social */
 .social__list {
     list-style: none;
@@ -106,6 +118,7 @@ a {
     border: 2px solid red;
     margin-left: 130px;
 }
+
 .social__list-item {
     border-radius: 50%;
     background-color: #ffffff;
@@ -115,6 +128,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .social__list-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -122,7 +136,7 @@ a {
 /* header content */
 .header__content {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     border: 2px solid red;
 }
 
@@ -134,43 +148,197 @@ a {
     display: flex;
     align-items: center;
 }
-.header__btn{
+
+.header__btn {
     width: 280px;
     height: 70px;
     padding: 0 40px 0 40px;
     font-size: 24px;
 }
+
 .btn--green-bg {
     background-color: #0aa566;
 }
-/* Smoothies */
 
+/* Smoothies */
+.smoothies {
+    padding:100px 0 110px 0;
+}
+.title {
+    font-family: MuliExtraBold;
+    font-size: 50px;
+    color: #f7ae3b;
+    margin-bottom: 55px;
+    border: 2px solid red;
+}
+
+.smoothies__title {}
+
+.text {
+    font-family: MuliRegular;
+    font-size: 18px;
+    color: #1e1e1e;
+    border: 2px solid red;
+}
+
+.smoothies__text {
+    width: 920px;
+}
+
+.smoothies__text-bold {
+    font-family: MuliExtraBold;
+    font-size: 25px;
+    color: #f2612d;
+}
 
 /* About */
+.about {
+    background-color: #14826f;
+}
 
+.about__title {
+    font-family: MuliExtraBold;
+    font-size: 55px;
+    color: #ffffff;
+    width: 590px;
+    height: 100px;
+}
 
+.about__title--green {
+    font-family: MuliExtraBold;
+    font-size: 55px;
+    color: #cae941;
+    border: 2px solid red;
+}
+
+.about__list-item {
+    color: #ffffff;
+}
+
+.about__btn-orange-border {
+    width: 380px;
+    height: 60px;
+    padding-left: 30px;
+    border-radius: 30px;
+    border: solid 2px #f8b231;
+    background: transparent;
+    font-size: 21px;
+}
 /* Products */
+.products__title {
+    font-family: MuliBold;
+    font-size: 24px;
+    color: #ffffff;
+}
 
+.products__text-bold {
+    font-family: MuliExtraBoldItalic;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.products__chocolate {
+    background-color: #632b17;
+}
+
+.products__vegan {
+    background-color: #178670;
+}
+
+.products__lemon {
+    background-color: #f7ae3b;
+}
+
+.products__turmeric {
+    background-color: #c3471b;
+}
+
+.products__btn-white-border {
+    width: 200px;
+    height: 60px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: solid 2px #ffffff;
+    background: transparent;
+    font-size: 21px;
+}
 
 /* Story */
-
+.story__text {
+    width: 510px;
+}
+.story__btn {
+    width: 300px;
+    height: 60px;
+    padding-left: 30px;
+    font-size: 21px;
+    background-color: #0aa566;
+}
 
 /* Testimonials */
-
-
+.testimonials {
+    background-color:#672f1b;
+}
+.testimonials__title--red {
+    color: #f2612d;
+}
+.testimonials__text {
+    width: 450px;
+    color: #ffffff;
+}
+.testimonials__text--orange {
+    color: #f7ae3b;
+}
+.testimonials__btn {
+    background: transparent;
+    border: none;
+}
 /* Blog */
-
-
+.blog__title--red {
+    color: #f2612d;
+    font-family: MuliExtraBold;
+    font-size: 30px;
+}
+.blog__text {
+    width: 470px;
+}
 /* Instagram */
-
+.instagram__link {
+    color: #0aa566;
+    font-family: MuliExtraBold;
+    font-size: 24px;
+}
 
 /* Footer */
-
-
-
+.footer__top {
+    background-color: #f6ab3b;
+}
+.footer__imput {
+    font-family: MuliBold;
+    font-size: 17px;
+    color: #6d450c;
+}
+.follow__title {
+    font-family: MuliExtraBold;
+    font-size: 18px;
+    color: #6d450c;
+}
+.footer-bottom {
+    background-color: #6c2c1c;
+}
+.footer__title {
+    font-family: MuliExtraBold;
+    font-size: 26px;
+    color: #ffffff;
+}
+.footer__text-btn {
+    font-family: MuliRegular;
+    font-size: 16px;
+    color: #ffffff;
+}
+.footer__text-time {
+    font-family: MuliBold;
+    font-size: 13px;
+    color: #af8a82;
+}
 /* Здесь будут медиа запросы */
-
-
-
-
-
