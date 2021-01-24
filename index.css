@@ -9,13 +9,18 @@
 }
 
 @font-face {
+    src: url("./assets/fonts/Muli-BoldItalic.ttf");
+    font-family: MuliBoldItalic;
+}
+
+@font-face {
     src: url("./assets/fonts/Muli-ExtraBold.woff");
     font-family: MuliExtraBold;
 }
 
 @font-face {
-    src: url("./assets/fonts/Muli-ExtraBoldItalic.woff");
-    font-family: MuliExtraBoldItalic;
+    src: url("./assets/fonts/Muli-Italic.ttf");
+    font-family: MuliItalic;
 }
 
 @font-face {
@@ -24,13 +29,8 @@
 }
 
 @font-face {
-    src: url("./assets/fonts/Poppins-Medium.ttf");
-    font-family: PoppinsMedium;
-}
-
-@font-face {
-    src: url("./assets/fonts/Poppins-SemiBold.ttf");
-    font-family: PoppinsSemiBold;
+    src: url("./assets/fonts/Muli-Semi-BoldItalic.ttf");
+    font-family: MuliSemiBoldItalic;
 }
 
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
@@ -163,11 +163,12 @@ a {
 
 /* Smoothies */
 .smoothies {
-    padding:100px 0 110px 0;
+    padding: 100px 0 110px 0;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
+
 .title {
     font-family: MuliExtraBold;
     font-size: 50px;
@@ -187,7 +188,8 @@ a {
 }
 
 .smoothies__text {
-    width: 920px;
+    width: 915px;
+    line-height: 35px;
     text-align: center;
 }
 
@@ -197,31 +199,67 @@ a {
     color: #f2612d;
 }
 
+.smoothies__desc {
+    width: 970px;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+
+.smoothies__box {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    border: 2px solid red;
+
+}
+
+.smoothies__text-bold {
+    margin-top: 27px;
+}
+
 /* About */
 .about {
     background-color: #14826f;
     display: flex;
+    padding: 65px 0 0 140px;
+}
+
+.about__desc {
+    width: 680px;
+    /* padding-left: 140px; */
+    border: 2px solid red;
 }
 
 .about__title {
     font-family: MuliExtraBold;
     font-size: 55px;
     color: #ffffff;
-    width: 590px;
-    height: 100px;
 }
 
 .about__title--green {
     font-family: MuliExtraBold;
     font-size: 55px;
     color: #cae941;
-    border: 2px solid red;
 }
+
 .about__list {
     list-style: none;
+    padding: 50px 0 50px 0;
+    border: 2px solid red;
 }
+
 .about__list-item {
     color: #ffffff;
+}
+
+.about__img {
+    padding-right: 140px;
+    border: 2px solid red;
 }
 
 .about__btn--orange-border {
@@ -232,54 +270,54 @@ a {
     background: transparent;
     font-size: 21px;
 }
+
 /* Products */
 .products {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 130px 0 80px 0;
+}
+
+.products__img {
+    border: 2px solid red;
+    margin-bottom: 35px;
+}
+
 .products__title {
     font-family: MuliBold;
     font-size: 24px;
+    line-height: 32px;
     color: #ffffff;
+    border: 2px solid red;
 }
 
 .products__text-bold {
-    font-family: MuliExtraBoldItalic;
+    font-family: MuliItalic;
     font-size: 21px;
     color: #ffffff;
+    margin-bottom: 65px;
+    border: 2px solid red;
 }
 
-.products__chocolate {
+.products--chocolate {
     background-color: #632b17;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 25%;
 }
-
-.products__vegan {
+.products--vegan {
     background-color: #178670;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 25%;
 }
-
-.products__lemon {
+.products--lemon {
     background-color: #f7ae3b;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 25%;
 }
-
-.products__turmeric {
+.products--turmeric {
     background-color: #c3471b;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 25%;
 }
 
 .products__btn--white-border {
@@ -292,9 +330,28 @@ a {
 }
 
 /* Story */
+.story {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 160px 0;
+}
+
+.story__somestory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 205px;
+    border: 2px solid red;
+}
+.story__title {
+    padding-bottom: 45px;
+}
 .story__text {
     width: 510px;
+    line-height: 35px;
+    padding-bottom: 60px;
 }
+
 .story__btn {
     width: 300px;
     height: 60px;
@@ -305,31 +362,38 @@ a {
 
 /* Testimonials */
 .testimonials {
-    background-color:#672f1b;
+    background-color: #672f1b;
 }
+
 .testimonials__title--red {
     color: #f2612d;
 }
+
 .testimonials__text {
     width: 450px;
     color: #ffffff;
 }
+
 .testimonials__text--orange {
     color: #f7ae3b;
 }
+
 .testimonials__btn {
     background: transparent;
     border: none;
 }
+
 /* Blog */
 .blog__title--red {
     color: #f2612d;
     font-family: MuliExtraBold;
     font-size: 30px;
 }
+
 .blog__text {
     width: 470px;
 }
+
 /* Instagram */
 .instagram__link {
     color: #0aa566;
@@ -341,32 +405,39 @@ a {
 .footer__top {
     background-color: #f6ab3b;
 }
+
 .footer__imput {
     font-family: MuliBold;
     font-size: 17px;
     color: #6d450c;
 }
+
 .follow__title {
     font-family: MuliExtraBold;
     font-size: 18px;
     color: #6d450c;
 }
+
 .footer-bottom {
     background-color: #6c2c1c;
 }
+
 .footer__title {
     font-family: MuliExtraBold;
     font-size: 26px;
     color: #ffffff;
 }
+
 .footer__text-btn {
     font-family: MuliRegular;
     font-size: 16px;
     color: #ffffff;
 }
+
 .footer__text-time {
     font-family: MuliBold;
     font-size: 13px;
     color: #af8a82;
 }
+
 /* Здесь будут медиа запросы */
