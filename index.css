@@ -4,7 +4,7 @@
     src: url(./assets/fonts/Muli-Regular.woff); 
 } */
 @font-face {
-    src: url("./assets/fonts/Muli-Bold.woff");
+    src: url("./assets/fonts/Muli-Bold.ttf");
     font-family: MuliBold;
 }
 
@@ -250,13 +250,16 @@ a {
 .about__list {
     list-style: none;
     padding: 50px 0 50px 0;
+    list-style-image:url(./assets/images/about/List\ about.png);
     border: 2px solid red;
 }
 
 .about__list-item {
     color: #ffffff;
 }
-
+.about__text {
+    font-family: MuliExtraBold;
+}
 .about__img {
     padding-right: 140px;
     border: 2px solid red;
@@ -363,81 +366,173 @@ a {
 /* Testimonials */
 .testimonials {
     background-color: #672f1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 80px 0;
 }
-
+.testimonials__title {
+    margin-bottom: 120px;
+}
+.testimonials__wishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+}
 .testimonials__title--red {
     color: #f2612d;
 }
 
 .testimonials__text {
-    width: 450px;
+    width: 455px;
+    line-height: 35px;
+    text-align: center;
     color: #ffffff;
 }
 
 .testimonials__text--orange {
     color: #f7ae3b;
+    line-height: 45px;
+    text-align: center;
 }
-
 .testimonials__btn {
     background: transparent;
     border: none;
 }
 
 /* Blog */
+.blog {
+    display: flex;
+    justify-content: center;
+}
+.blog__our {
+    padding:99px 60px 200px 0;
+    border: 2px solid red;
+}
+.blog__title {
+    margin-bottom: 50px;
+} 
+
 .blog__title--red {
     color: #f2612d;
     font-family: MuliExtraBold;
     font-size: 30px;
+    margin: 330px 0 80px 0;
+    border: 2px solid red;
 }
+.blog__promo {
+    border: 2px solid red;
 
+}
 .blog__text {
     width: 470px;
+    margin-left: 63px;
+}
+.blog__text-bold {
+    font-family: MuliBoldItalic;
+}
+/* Instagram */
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+
+}
+.instagram__box {
+    margin-bottom: 45px;
+    border: 2px solid red;
+
 }
 
-/* Instagram */
 .instagram__link {
     color: #0aa566;
     font-family: MuliExtraBold;
     font-size: 24px;
-}
+    border: 2px solid red;
 
+}
+.instagram__photo {
+    display: flex;
+    border: 2px solid red;
+
+}
 /* Footer */
 .footer__top {
     background-color: #f6ab3b;
+    padding: 80px 0 90px 0;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid red;
+}
+.footer__logo {
+    display: flex;
+    align-items: center;
+    padding-right: 295px;
+    border: 2px solid red;
+}
+/* footer information */
+.footer__title {
+    font-family: MuliExtraBold;
+    font-size: 26px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    border: 2px solid red;
+}
+.information__menu-list {
+    list-style: none;
+    border: 2px solid red;
+}
+.information__item {
+    font-family: MuliBold;
+    font-size: 18px;
+    line-height: 35px;
+    border: 2px solid red;
+}
+.information__link {
+    color: #6d450c;
 }
 
+/* footer payment */
+/* footer blok */
 .footer__imput {
     font-family: MuliBold;
     font-size: 17px;
     color: #6d450c;
+    border: 2px solid red;
 }
-
+/* footer follow */
 .follow__title {
     font-family: MuliExtraBold;
     font-size: 18px;
     color: #6d450c;
+    border: 2px solid red;
 }
-
+.follow__list {
+    list-style: none;
+    display: flex;
+    border: 2px solid red;
+}
+/* footer bottom */
 .footer-bottom {
     background-color: #6c2c1c;
-}
-
-.footer__title {
-    font-family: MuliExtraBold;
-    font-size: 26px;
-    color: #ffffff;
-}
-
-.footer__text-btn {
-    font-family: MuliRegular;
-    font-size: 16px;
-    color: #ffffff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .footer__text-time {
     font-family: MuliBold;
     font-size: 13px;
     color: #af8a82;
+    border: 2px solid red;
 }
-
+.footer__text-btn {
+    font-family: MuliRegular;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid red;
+}
 /* Здесь будут медиа запросы */
