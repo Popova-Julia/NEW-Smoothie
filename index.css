@@ -759,6 +759,7 @@ a {
     justify-content: center;
     align-items:center;
     position: relative;
+    z-index: 2;
 }
 
 .footer__text-time {
@@ -776,12 +777,16 @@ a {
     right: 100px;
     border: 2px solid red;
 }
-.footer__text-btn::after {
+.footer__btn-go-top {
     content: "";
     position: absolute;
-    width: 13px;
-    height: 25px;
-    background-image: url(./assets/images/footer/arrow\ top.png);
-    bottom: 180%;
-    left: 73px;
-/* Здесь будут медиа запросы */
+    width: 50px;
+    height: 50px;
+    top: -48%;
+    right: 44px;
+    border-radius: 5px;
+    background-color: #f2662f;
+    z-index: 0;
+}
+
+    /* Здесь будут медиа запросы */
