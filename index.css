@@ -431,12 +431,11 @@ a {
 }
 .story__somestory::before {
     content:"";
-    display: inline-block;
     position: absolute;
     width: 290px;
     height: 216px;
     background-image: url(./assets/images/story/story\ sticer.png);
-    top: 145px;
+    top: 19%;
     right: 770px;
 }
 .story__somestory::after {
@@ -446,8 +445,9 @@ a {
     width: 410px;
     height: 300px;
     background-image: url(./assets/images/story/Dots.png);
-    bottom: -232px;
+    bottom: -27%;
     right: 0px;
+    z-index: 2;
 }
 .story__title {
     margin-bottom: 45px;
@@ -496,8 +496,8 @@ a {
     font-family: MuliExtraBold;
     font-size: 200px;
     color: rgba(82, 25, 5, 0.6);
-    top: 228px;
-    right: 745px;
+    top: 30%;
+    right: 718px;
     z-index: -1;
 }
 
@@ -571,14 +571,14 @@ a {
 }
 .blog__promo::after {
     content:"";
-    display:inline-block;
+    display: inline-block;
     position: absolute;
     width: 687px;
     height: 12px;
     border-radius: 5px;
     background-color: #f7ae3b;
     top:34%;
-    right:358px;
+    right:326px;
     z-index: -1;
 }
 .blog__text {
@@ -616,9 +616,18 @@ a {
     display: flex;
     border: 2px solid red;
 }
-
+.photo__smoothies::after {
+    content:"";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(./assets/images/instagram/inst-mini.png);
+    bottom: 9%;
+    right: 24px;
+}
 .photo__smoothies {
     flex: 0 1 20%;
+    position: relative;
 }
 
 .photo__img {
@@ -684,6 +693,7 @@ a {
 
 /* footer follow */
 .footer__follow {
+    position: relative;
     border: 2px solid red;
 }
 
@@ -693,17 +703,33 @@ a {
     border-radius: 30px;
     width: 495px;
     height: 60px;
-    color: #6d450c;
     padding-left: 65px;
     margin-bottom: 40px;
     border: 2px solid red;
 }
-
+.footer__social::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 19px;
+    background-image: url(./assets/images/footer/iconImpyt.png);
+    top: 40%;
+    left: 26px;
+}
 .footer__social {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     border: 2px solid red;
+}
+.footer__social::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 43px;   
+    background-image: url(./assets/images/footer/Arrow\ footer.png);
+    top: 72%;
+    right: 393px;
 }
 
 .footer__text-follow {
@@ -750,4 +776,12 @@ a {
     right: 100px;
     border: 2px solid red;
 }
+.footer__text-btn::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 25px;
+    background-image: url(./assets/images/footer/arrow\ top.png);
+    bottom: 180%;
+    left: 73px;
 /* Здесь будут медиа запросы */
