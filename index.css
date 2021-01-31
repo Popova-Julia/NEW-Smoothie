@@ -330,6 +330,8 @@ a {
 
 .about__img {
     margin-right: 140px;
+    display: flex;
+    transform: translateY(90px);
     border: 2px solid red;
 }
 
@@ -429,15 +431,6 @@ a {
     margin-right: 205px;
     border: 2px solid red;
 }
-.story__somestory::before {
-    content:"";
-    position: absolute;
-    width: 290px;
-    height: 216px;
-    background-image: url(./assets/images/story/story\ sticer.png);
-    top: 19%;
-    right: 770px;
-}
 .story__somestory::after {
     content:"";
     display: inline-block;
@@ -449,6 +442,21 @@ a {
     right: 0px;
     z-index: 2;
 }
+
+.story__box {
+    position: relative;
+}
+
+.story__box::before {
+    content:"";
+    position: absolute;
+    width: 290px;
+    height: 216px;
+    background-image: url(./assets/images/story/story\ sticer.png);
+    top: 5%;
+    left: -156px;
+}
+
 .story__title {
     margin-bottom: 45px;
 }
@@ -490,6 +498,7 @@ a {
     display: flex;
     align-items: flex-end;
 }
+
 .testimonials__box::after {
     position: absolute;
     content:"Sarah A";
@@ -584,11 +593,18 @@ a {
 .blog__text {
     width: 490px;
     margin: 45px 0 0 63px;
+    position: relative;
     border: 2px solid red;
 }
 
 .blog__text-bold {
-    font-family: MuliBoldItalic;
+    font-family: MuliBold;
+}
+.blog__arrow {
+    position: absolute;
+    border-style: none;
+    bottom: 34%;
+    right: 509px;
 }
 
 /* Instagram */
