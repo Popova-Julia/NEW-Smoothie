@@ -226,7 +226,7 @@ a {
 }
 
 .smoothies__text {
-    width: 915px;
+    max-width: 915px;
     line-height: 2;
     text-align: center;
 }
@@ -239,7 +239,7 @@ a {
 }
 
 .smoothies__desc {
-    width: 970px;
+    max-width: 970px;
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -286,7 +286,7 @@ a {
 }
 
 .about__desc {
-    width: 680px;
+    max-width: 680px;
     border: 2px solid red;
 }
 
@@ -301,6 +301,7 @@ a {
     color: #cae941;
     position: relative;
 }
+
 .about__title--green::after {
     content:"";
     display:inline-block;
@@ -506,31 +507,37 @@ a {
     z-index: 2;
 }
 
-.testimonials__box::after {
+.testimonials__wishes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    position: relative
+}
+
+.testimonials__wishes::after {
     position: absolute;
     content:"Sarah A";
     font-family: MuliExtraBold;
     font-size: 200px;
     color: rgba(82, 25, 5, 0.6);
-    right: 709px;
-    top: 436%;
+    left: 45%;
+    top: -18px;
     width: max-content;
     z-index: -1;
-}
-
-.testimonials__wishes {
-    display: flex;
-    flex-direction: column;
-    margin-right: 60px;
-    position: relative;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
 
 .testimonials__text {
-    width: 455px;
+    max-width: 455px;
     line-height: 2;
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .testimonials__text-orange {
@@ -602,13 +609,14 @@ a {
     z-index: -1;
 }
 .blog__text {
-    width: 490px;
+    max-width: 490px;
     margin: 45px 0 0 63px;
     border: 2px solid red;
 }
 
 .blog__text-bold {
     font-family: MuliBold;
+    
 }
 
 /* Instagram */
@@ -698,7 +706,7 @@ a {
 
 /* footer payment */
 .footer__payment {
-    width: 260px;
+    max-width: 260px;
 }
 
 .footer__payment-imgs {
