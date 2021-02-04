@@ -202,7 +202,6 @@ a {
 
 /* Smoothies */
 .smoothies {
-    padding: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +215,7 @@ a {
 }
 
 .smoothies__title {
-    margin-bottom: 55px;
+    margin: 110px 0 55px;
 }
 
 .text {
@@ -227,6 +226,7 @@ a {
 
 .smoothies__text {
     max-width: 915px;
+    width: 100%;
     line-height: 2;
     text-align: center;
 }
@@ -240,7 +240,8 @@ a {
 
 .smoothies__desc {
     max-width: 970px;
-    margin-top: 60px;
+    width: 100%;
+    margin: 60px 0 110px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -287,6 +288,7 @@ a {
 
 .about__desc {
     max-width: 680px;
+    width: 100%;
     border: 2px solid red;
 }
 
@@ -471,7 +473,8 @@ a {
 }
 
 .story__text {
-    width: 510px;
+    max-width: 510px;
+    width: 100%;
     line-height: 2;
     margin-bottom: 60px;
 }
@@ -533,6 +536,7 @@ a {
 
 .testimonials__text {
     max-width: 455px;
+    width: 100%;
     line-height: 2;
     text-align: center;
     color: #ffffff;
@@ -610,13 +614,13 @@ a {
 }
 .blog__text {
     max-width: 490px;
+    width: 100%;
     margin: 45px 0 0 63px;
     border: 2px solid red;
 }
 
 .blog__text-bold {
     font-family: MuliBold;
-    
 }
 
 /* Instagram */
@@ -707,6 +711,7 @@ a {
 /* footer payment */
 .footer__payment {
     max-width: 260px;
+    width: 100%;
 }
 
 .footer__payment-imgs {
@@ -820,3 +825,46 @@ a {
 }
 
     /* Здесь будут медиа запросы */
+    @media (max-width: 360px) {
+    .title {
+        font-size: 38px;
+    }
+        .smoothies__title {
+        margin: 30px 0 20px;
+        text-align: center;
+    }
+    /* .smoothies__box {
+        flex-basis: 0;
+        width: 171px;
+    } */
+    .story__somestory::after {
+        content: none;
+    }
+
+    .testimonials__title {
+        margin: 40px 10px;
+        text-align: center;
+    }
+    .testimonials__box {
+        display: block;
+    }
+    .testimonials__wishes::after {
+        font-size: 82px;
+        left: 168px;
+        top: 94px;
+    }
+    .testimonials__wishes {
+        margin: 0;
+    }
+    .testimonials__text-orange {
+        margin-bottom: 23px;
+    }
+    .testimonials__img {
+        margin-left: 112px;
+        max-width: 100%;
+        width: 140px;
+    }
+    .testimonials__btns {
+        margin: 20px 80px;
+    }
+}
