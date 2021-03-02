@@ -1,0 +1,97 @@
+// main: ./../main.less
+
+/* About */
+.about {
+    padding: 65px 0 0 140px;
+    background-color: #14826f;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__desc {
+    max-width: 630px;
+    width: max-content;
+    border: 2px solid red;
+}
+
+.about__title {
+    font-family: MuliExtraBold;
+    font-size: 5.5rem;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+
+.about__title--green {
+    color: #cae941;
+    position: relative;
+}
+
+.about__title--green::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    max-width: 460px;
+    width: 100%;
+    height: 13px;
+    background-image: url(../assets/images/about/Line.png);
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.about__list {
+    list-style: none;
+    margin: 0 0 50px 25px;
+    font-size: 2.1rem;
+    list-style-image: url(../assets/images/about/List\ about.png);
+    border: 2px solid red;
+}
+
+.about__list-item {
+    color: #ffffff;
+    line-height: 2;
+    padding-left: 22px;
+}
+
+.about__text {
+    font-family: MuliExtraBold;
+}
+
+.about__img {
+    margin-right: 140px;
+    max-width: 100%;
+    display: flex;
+    transform: translateY(90px);
+    border: 2px solid red;
+}
+
+.about__btn--orange-border {
+    max-width: 380px;
+    width: 100%;
+    height: 60px;
+    padding-left: 30px;
+    border: solid 2px #f8b231;
+    background: transparent;
+    font-size: 2.1rem;
+    position: relative;
+}
+.about__btn--orange-border::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    background-image: url(../assets/images/Arrow-orange.png);
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
