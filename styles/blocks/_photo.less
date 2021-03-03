@@ -1,0 +1,23 @@
+// main: ./../main.less
+
+.photo {
+    &__smoothies {
+        flex: 0 1 20%;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-image: url(../assets/images/instagram/inst-mini.png);
+            bottom: 9%;
+            right: 24px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,45 @@
+// main: ./../main.less
+
+.blog {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    &__our {
+        margin: 99px 60px 200px 0;
+    }
+    
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__title--red {
+        color: #f2612d;
+        font-family: MuliExtraBold;
+        font-size: 3rem;
+        margin: 330px 0 20px 0;
+    }
+
+    &__promo::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 687px;
+        height: 12px;
+        border-radius: 5px;
+        background-color: #f7ae3b;
+        top: 34%;
+        right: 326px;
+        z-index: -1;
+    }
+
+    &__text {
+        max-width: 490px;
+        margin: 45px 0 0 63px;
+    }
+
+    &__text-bold {
+        font-family: MuliBold;
+    }
+}

@@ -1,0 +1,87 @@
+// main: ./../main.less
+
+
+.testimonials {
+    background-color: #672f1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin: 120px;
+    }
+
+    &__title--red {
+        color: #f2612d;
+    }
+
+    &__box {
+        display: flex;
+        align-items: flex-end;
+        z-index: 2;
+    }
+
+    &__wishes {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "Sarah A";
+            font-family: MuliExtraBold;
+            font-size: 20rem;
+            color: rgba(82, 25, 5, 0.6);
+            left: 45%;
+            top: -18px;
+            width: max-content;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+    }
+
+    &__text {
+        max-width: 455px;
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    &__text-orange {
+        font-family: MuliSemiBoldItalic;
+        color: #f7ae3b;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    &__img {
+        z-index: 3;
+    }
+
+    &__btns {
+        margin: 120px 80px;
+        border: 2px solid red;
+    }
+
+    &__arrow {
+        background: transparent;
+        border: none;
+        border: 2px solid red;
+        &:not(:last-child) {
+            margin-right: 100px;
+        }
+    }
+    
+
+    &__left {
+        transform: rotate(180deg);
+    }
+}

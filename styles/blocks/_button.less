@@ -8,25 +8,25 @@
     color: #ffffff;
     display: flex;
     align-items: center;
-}
-.btn--green-bg {
-    background-color: #0aa566;
-    position: relative;
-}
-.btn--green-bg::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    height: 16px;
-    width: 30px;
-    background-image: url(../assets/images/Arrow-orange.png);
-    top: 50%;
-    right: 40px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
 
+    &--green-bg {
+        background-color: #0aa566;
+        position: relative;
 
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 16px;
+            width: 30px;
+            background-image: url(../assets/images/Arrow-orange.png);
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+    }
+}

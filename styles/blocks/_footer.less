@@ -1,0 +1,161 @@
+// main: ./../main.less
+
+.footer {
+    &__top {
+        background-color: #f6ab3b;
+        padding: 80px 90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 2px solid red;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 295px;
+        border: 2px solid red;
+    }
+
+    &__title {
+        font-family: MuliExtraBold;
+        font-size: 2.6rem;
+        margin-bottom: 40px;
+        color: #ffffff;
+        border: 2px solid red;
+    }
+
+    &__list {
+        list-style: none;
+        border: 2px solid red;
+    }
+
+    &__item {
+        font-family: MuliBold;
+        font-size: 1.8rem;
+        line-height: 2;
+        border: 2px solid red;
+    }
+
+    &__link {
+        color: #6d450c;
+    }
+
+    &__payment {
+        max-width: 260px;
+        width: 100%;
+    }
+
+    &__payment-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer__img {
+        margin: 0 19px 19px 0;
+    }
+
+    &__follow {
+        position: relative;
+        width: 495px;
+        border: 2px solid red;
+    }
+
+    &__imput {
+        font-family: MuliBold;
+        font-size: 1.7rem;
+        border-radius: 30px;
+        max-width: 495px;
+        width: 100%;
+        height: 60px;
+        padding-left: 65px;
+        margin-bottom: 40px;
+        border: 2px solid red;
+    }
+
+    &__social {
+        margin-right: 52px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        border: 2px solid red;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 19px;
+            background-image: url(../assets/images/footer/iconImpyt.png);
+            top: 40%;
+            left: 26px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 43px;
+            background-image: url(../assets/images/footer/Arrow\ footer.png);
+            top: 68%;
+            right: 338px;
+        }
+    }
+
+    &__text-follow {
+        font-family: MuliExtraBold;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-right: 50px;
+        color: #6d450c;
+        border: 2px solid red;
+    }
+
+    &__social-list {
+        list-style: none;
+        display: flex;
+        border: 2px solid red;
+    }
+
+    &__social-item:not(:last-child) {
+        padding-right: 25px;
+    }
+
+    &-bottom {
+        background-color: #6c2c1c;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__text-time {
+        font-size: 1.3rem;
+        color: #af8a82;
+        border: 2px solid red;
+    }
+
+    &__text-btn {
+        font-family: MuliBold;
+        font-size: 1.6rem;
+        color: #ffffff;
+        position: absolute;
+        right: 100px;
+        border: 2px solid red;
+    }
+
+    &__btn-go-top {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -48%;
+        right: 44px;
+        border-radius: 5px;
+        background-color: #f2662f;
+        border: none;
+        z-index: 0;
+    }
+}

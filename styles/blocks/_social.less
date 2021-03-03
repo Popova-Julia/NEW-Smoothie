@@ -1,31 +1,30 @@
 // main: ./../main.less
 
 /* Header */
-.social__list {
-    list-style: none;
-    display: flex;
-    border: 2px solid red;
-    margin-left: 130px;
-}
+.social {
+    &__list {
+        list-style: none;
+        display: flex;
+        border: 2px solid red;
+        margin-left: 130px;
+    }
 
-.social__list-item {
-    border-radius: 50%;
-    background-color: #ffffff;
-    width: 35px;
-    height: 35px;
-}
-.social__list-item {
-    margin-right: 10px;
-}
+    &__list-item {
+        border-radius: 50%;
+        background-color: #ffffff;
+        width: 35px;
+        height: 35px;
 
-.social__list-item:last-child {
-    margin-right: 0;
-}
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
 
-.social__link {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__link {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

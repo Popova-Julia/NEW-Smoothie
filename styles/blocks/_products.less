@@ -1,0 +1,78 @@
+// main: ./../main.less
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    &-style {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 25%;
+        padding: 130px 0 80px 0;
+    }
+    
+    &__img {
+        border: 2px solid red;
+        margin-bottom: 35px;
+    }
+    
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: MuliBold;
+        font-size: 2.4rem;
+        line-height: 1;
+        color: #ffffff;
+        border: 2px solid red;
+    }
+    
+    &__text-bold {
+        font-family: MuliItalic;
+        font-size: 2.1rem;
+        line-height: 2;
+        color: #ffffff;
+        margin-bottom: 65px;
+        border: 2px solid red;
+    }
+    
+    &--chocolate {
+        background-color: #632b17;
+    }
+    
+    &--vegan {
+        background-color: #178670;
+    }
+    
+    &--lemon {
+        background-color: #f7ae3b;
+    }
+    
+    &--turmeric {
+        background-color: #c3471b;
+    }
+    
+    &__btn--white-border {
+        max-width: 200px;
+        width: 100%;
+        height: 60px;
+        padding-left: 40px;
+        border: solid 2px #ffffff;
+        background: transparent;
+        font-size: 2.1rem;
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 16px;
+            width: 30px;
+            background-image: url(../assets/images/products/Arrow\ white.png);
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+        }
+    }
+}
+

@@ -1,0 +1,82 @@
+// main: ./../main.less
+
+.story {
+    display: flex;
+    justify-content: center;
+    padding: 120px 160px;
+    position: relative;
+
+    &__somestory {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 205px;
+        border: 2px solid red;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 410px;
+            height: 300px;
+            background-image: url(../assets/images/story/Dots.png);
+            bottom: -27%;
+            right: 58px;
+            z-index: 2;
+        }
+    }
+
+    &__title {
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        max-width: 510px;
+        width: max-content;
+        line-height: 2;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        width: 300px;
+        height: 60px;
+        padding-left: 30px;
+        font-size: 2.1rem;
+        background-color: #0aa566;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 16px;
+            width: 30px;
+            background-image: url(../assets/images/Arrow-orange.png);
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+    }
+
+    &__box {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 290px;
+            height: 216px;
+            background-image: url(../assets/images/story/story\ sticer.png);
+            top: 5%;
+            left: -156px;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+}
